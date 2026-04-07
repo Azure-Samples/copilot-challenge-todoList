@@ -4,13 +4,39 @@
 
 This solution contains multiple .NET 8 projects, including a Razor Pages web application, REST APIs, and a test project. Razor Pages should be prioritized over Blazor or ASP.NET Core MVC when generating or modifying code.
 
-For specific API development guidelines and best practices, refer to the detailed documentation in `instructions/aspnet-rest-apis.instructions.md`.
+For specific API development guidelines and best practices, refer to the detailed documentation in .
 
+## Project Structure (First-Level Folders)
+...
 
+## Code Standards and Conventions
+This document defines the code standards and conventions for this solution, which includes .NET 8 projects with a focus on Razor Pages, REST APIs, and client-side JavaScript.
 
+### General Principles
+- **Consistency**: Follow existing patterns and structure in the solution.
+- **Readability**: Write clear, self-explanatory code and comments where necessary.
+- **Simplicity**: Prefer simple, maintainable solutions over complex ones.
+
+### Project Structure ## - Organize code into appropriate folders:
+  ...
+  
+### Naming Conventions
+
+- **Classes, Interfaces, Enums**: PascalCase (e.g., `TodoItem`, `ITodoService`)
+- **Methods, Properties**: PascalCase (e.g., `GetAll`, `IsComplete`)
+- **Variables, Parameters, Fields**: camelCase
+- **Constants**: PascalCase (e.g., `DefaultPageSize`)
+
+### APIs
+- Use attribute routing
+- ...
+
+### Entity Framework Core
+### Dependency Injection
+### Logging
+### Testing
 
 ## Code Review Guidelines
-
 ### General Principles
 
 - **Clarity**: Ensure the code is easy to understand and well-documented where necessary.
@@ -26,62 +52,6 @@ For specific API development guidelines and best practices, refer to the detaile
 - Test the changes locally if possible to verify their behavior.
 - Approve the pull request only when all concerns have been addressed and the code meets the required standards.
 
-## Azure-Specific Instructions
-
-### General Guidelines
-
-- Always use Azure tools and services when handling Azure-related requests.
-- Follow Azure best practices for code generation, deployment, and operations.
-- Ensure that all Azure resources are provisioned and managed using Infrastructure as Code (IaC) tools like Bicep or Terraform.
-
-### Azure Code Standards
-
-- Use the `azure_development-get_code_gen_best_practices` tool for generating Azure-related code.
-- Follow Azure Functions best practices when working with serverless functions.
-- Adhere to Azure Static Web Apps guidelines for static web applications.
-
-### Deployment to Azure
-
-- Use the `azure_development-get_deployment_best_practices` tool to ensure deployments are secure, reliable, and efficient.
-- Validate Azure resource quotas and regions before deployment.
-- Use Azure Developer CLI (`azd`) for streamlined deployment processes.
-
-### Logging and Monitoring
-
-- Use Azure Monitor and Application Insights for logging and monitoring Azure resources.
-- Ensure diagnostic settings are enabled for all Azure resources.
-
-### Security
-
-- Use Azure Key Vault for managing secrets and sensitive configuration data.
-- Implement role-based access control (RBAC) for all Azure resources.
-
-### Testing and Validation
-
-- Test Azure deployments using integration tests that validate resource configurations and connectivity.
-- Use Azure-specific testing tools where applicable.
-
-### Documentation
-
-- Document all Azure-related configurations and deployments in the repository.
-- Include architecture diagrams and deployment steps in the `docs/` folder.
-
-
-## Playwright Testing Instructions
-
-### General Guidelines
-- Use Playwright for end-to-end testing of web applications.
-- Follow best practices for writing maintainable and reliable Playwright tests.
-
-### Run the application before executing tests
-- Ensure the web application is running locally or in a test environment before executing Playwright tests.
-- To run the application using Docker Compose file `DockerCompose.yml` in the `src` folder, follow these steps:
-  1. Open a terminal and navigate to the `src` directory of the project.
-  2. Execute the following command to start the application: `docker compose -f DockerCompose.yml up -d --build`.
-  3. Wait for the application to start and ensure all services are running correctly.
-  4. Once the application is running, you can proceed to execute your Playwright tests.
-  5. After completing the tests, you can stop the application by executing: `docker compose -f DockerCompose.yml down`.
-
 ## GitHub Copilot Best Practices
 
 ### Using Copilot Effectively
@@ -92,8 +62,4 @@ For specific API development guidelines and best practices, refer to the detaile
 - Example: "Create a [ComponentType] following the [existing pattern] with structured logging"
 
 ## Skills for CRUD Endpoints
-
-For detailed guidance on creating REST API endpoints, refer to:
-- [SKILL-REST-API-CRUD.md](.github/skills/SKILL-REST-API-CRUD.md)
-
-When generating or modifying API endpoints, follow the patterns defined in this skill for consistent logging, validation, and error handling.
+...

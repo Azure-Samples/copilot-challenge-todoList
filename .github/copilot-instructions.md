@@ -62,4 +62,5 @@ This document defines the code standards and conventions for this solution, whic
 - Example: "Create a [ComponentType] following the [existing pattern] with structured logging"
 
 ## Skills for CRUD Endpoints
+For detailed guidance on creating REST API endpoints, refer to:
 ...

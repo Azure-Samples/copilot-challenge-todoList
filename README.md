@@ -1,6 +1,7 @@
 # Demo-Copilot Solution Overview
 
 Demo-Copilot is a comprehensive .NET solution demonstrating best practices for building modern cloud-native applications on Azure.
+For more details, see the HELP.md file
 
 ## Project Structure
 
@@ -8,44 +9,11 @@ Demo-Copilot is a comprehensive .NET solution demonstrating best practices for b
 - **Todo.UnitTest** — MSTest project for testing
 - **Todo.Client** — Console application client
 
-## Core Standards
+## How Can I Use This Repository?
 
-### Code Conventions
+1. Clone the repository
+2. Open the solution in Visual Studio Code or Visual Studio
+3. Create a branch
+4. Run the application
+5. Use the GH Copilot prompts described in the HELP.md file
 
-- **PascalCase** for classes, methods, and public members
-- **camelCase** for variables, parameters, and private fields
-- **XML documentation comments** in Portuguese (pt-br) for all public APIs
-
-### Testing & Quality
-
-- MSTest framework for unit tests
-- Positive & negative scenario coverage
-- Async/await patterns throughout
-- Proper HTTP status codes in APIs
-
-### Architecture Principles
-
-- Dependency Injection via Program.cs
-- Logging with ILogger<T> in all exception handlers
-- REST APIs with attribute routing
-- Clean separation of concerns (Controllers, Models, Services, Data Access)
-
-## Key Technologies
-
-- .NET 7/8 runtime
-- Entity Framework Core for data access
-- Azure Cosmos DB for NoSQL data (when applicable)
-- Azure App Service for hosting
-- Azure Key Vault for secrets management
-
-## Getting Started
-
-```bash
-# Build
-dotnet build .\src\MyFirstProject.sln
-
-# Test
-dotnet test .\src\MyFirstProject.Tests\MyFirstProject.Tests.csproj
-
-# Run
-dotnet run --project .\src\MyFirstProject.WebApp\
